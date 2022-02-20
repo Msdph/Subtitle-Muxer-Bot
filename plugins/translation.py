@@ -1,12 +1,12 @@
 
 from pyrogram.emoji import *   
 class Translation (object):   
-    DOWNLOAD_SUCCESS = """File downloaded successfully!
+    DOWNLOAD_SUCCESS = """♻️فایل با موفقیت دانلود شد !
 
-Time taken : {} seconds."""
-    FILE_SIZE_ERROR = "ERROR ♨️♨️♨️ : Cannot Extract File Size from URL!"
-    MAX_FILE_SIZE = "File size is greater than 2Gb. Which is the limit imposed by telegram!"
-    LONG_CUS_FILENAME = """Filename you provided is greater than 60 characters.
-Please provide a shorter name."""
-    UNSUPPORTED_FORMAT = "ERROR ♨️♨️♨️ : File format {} Not supported!"
-    CHOOSE_CMD = "Subtitle file downloaded successfully!.\nChoose your desired mixing!\n[ /softremove , /softmux , /hardmux ]"
+▪️ زمان صرف شده : {} ثانیه."""
+    FILE_SIZE_ERROR = "ارور ♨️♨️♨️ : نمی توان اندازه فایل را از URL استخراج کرد!"
+    MAX_FILE_SIZE = "حجم فایل بیشتر از 2 گیگابایت است. این محدودیت از سمت تلگرام است!"
+    LONG_CUS_FILENAME = """نام فایل شما بیشتر از 60 کاراکتر است.
+لطفا اسم فایل را کوتاه کنید."""
+    UNSUPPORTED_FORMAT = "ارور ♨️♨️♨️ : فرمت فایل {} ساپورت نمیشود!"
+    CHOOSE_CMD = "✅ زیرنویس با موفقیت دانلود شد!.\n🔺زیرنویس سافتساب :  /softmux\n🔺زیرنویس هاردساب :  /hardmux \n🔺برداشتن زیرنویس سافتساب : /softremove"
