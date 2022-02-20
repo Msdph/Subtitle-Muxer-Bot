@@ -20,15 +20,15 @@ async def softmux(client, message):
     og_sub_filename = db.get_sub_filename(chat_id)
     text = ''
     if not og_vid_filename :
-        text += 'First send a Video File\n'
+        text += 'اول فیلم رو بفرست\n'
     if not og_sub_filename :
-        text += 'Send a Subtitle File!'
+        text += 'فایل زیرنویس رو بفرست!'
 
     if not (og_sub_filename and og_vid_filename) :
         await client.send_message(chat_id, text)
         return
 
-    text = 'Your File is Being Soft Subbed. This should be done in few seconds!'
+    text = '👻 سافتساب زود انجام میشه یکم صبر کن  . . . '
     sent_msg = await client.send_message(chat_id, text)
 
     softmux_filename = await softmux_vid(og_vid_filename, og_sub_filename, sent_msg)
@@ -51,11 +51,11 @@ async def softmux(client, message):
                 document = os.path.join(Config.DOWNLOAD_DIR, final_filename),
                 caption = final_filename
                 )
-        text = 'File Successfully Uploaded!\nTotal Time taken : {} seconds'.format(round(time.time()-start_time))
+        text = 'فایل با موفقیت آپلود شد!\nکل زمان صرف شده : {} ثانیه'.format(round(time.time()-start_time))
         await sent_msg.edit(text)
     except Exception as e:
         print(e)
-        await client.send_message(chat_id, 'An error occured while uploading the file!\nCheck logs for details of the error!')
+        await client.send_message(chat_id, 'هنگام آپلود فایل خطایی رخ داد!\nبرای جزئیات خطا، گزارش ها را بررسی کنید!')
 
     path = Config.DOWNLOAD_DIR+'/'
     os.remove(path+og_sub_filename)
@@ -82,14 +82,14 @@ async def hardmux(bot, message, cb=False):
     og_sub_filename = db.get_sub_filename(chat_id)
     text = ''
     if not og_vid_filename :
-        text += 'First send a Video File\n'
+        text += 'اول فیلم رو بفرست\n'
     if not og_sub_filename :
-        text += 'Send a Subtitle File!'
+        text += 'فایل زیرنویس رو بفرست!'
     
     if not (og_sub_filename or og_vid_filename) :
         return await bot.send_message(chat_id, text)
     
-    text = 'Your File is Being Hard Subbed. This might take a long time!'
+    text = '👻 هارد ساب خیلی طول میکشه زیاد صبر کن . . . '
     sent_msg = await bot.send_message(chat_id, text)
 
     hardmux_filename = await hardmux_vid(og_vid_filename, og_sub_filename, sent_msg)
@@ -114,11 +114,11 @@ async def hardmux(bot, message, cb=False):
                 video = os.path.join(Config.DOWNLOAD_DIR, final_filename),
                 caption = final_filename
                 )
-        text = 'File Successfully Uploaded!\nTotal Time taken : {} seconds'.format(round(time.time()-start_time))
+        text = 'فایل با موفقیت آپلود شد!\nکل زمان صرف شده : {} ثانیه'.format(round(time.time()-start_time))
         await sent_msg.edit(text)
     except Exception as e:
         print(e)
-        await client.send_message(chat_id, 'An error occured while uploading the file!\nCheck logs for details of the error!')
+        await client.send_message(chat_id, 'هنگام آپلود فایل خطایی رخ داد!\nبرای جزئیات خطا، گزارش ها را بررسی کنید!')
     
     path = Config.DOWNLOAD_DIR+'/'
     os.remove(path+og_sub_filename)
