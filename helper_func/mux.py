@@ -86,9 +86,9 @@ async def softmux_vid(vid_filename, sub_filename, msg):
         ])
     
     if process.returncode == 0:
-        await msg.edit('Muxing  Completed Successfully!\n\nTime taken : {} seconds'.format(round(start-time.time())))
+        await msg.edit('🔺 با موفقیت انجام شد!\n\nوقت صرف شده : {} ثانیه'.format(round(start-time.time())))
     else:
-        await msg.edit('An Error occured while Muxing! sorry something is wrong check again❗❗❗')
+        await msg.edit('هنگام مخلوط کردن خطایی رخ داد! ببخشید مشکلی پیش اومده دوباره چک کنید❗❗❗')
         return False
     time.sleep(2)
     return output
@@ -129,9 +129,9 @@ async def hardmux_vid(vid_filename, sub_filename, msg):
         ])
     
     if process.returncode == 0:
-        await msg.edit('Muxing  Completed Successfully!\n\nTime taken : {} seconds'.format(round(start-time.time())))
+        await msg.edit('🔺 با موفقیت انجام شد!\n\nوقت صرف شده : {} ثانیه'.format(round(start-time.time())))
     else:
-        await msg.edit('An Error occured while Muxing! sorry something is wrong check again❗❗❗')
+        await msg.edit('هنگام مخلوط کردن خطایی رخ داد! ببخشید مشکلی پیش اومده دوباره چک کنید❗❗❗')
         return False
     
     time.sleep(2)
@@ -180,9 +180,9 @@ async def softremove_vid(vid_filename, sub_filename, msg):
         ])
     
     if process.returncode == 0:
-        await msg.edit('Muxing  Completed Successfully!\n\nTime taken : {} seconds'.format(round(start-time.time())))
+        await msg.edit('🔺 با موفقیت انجام شد!\n\nوقت صرف شده : {} ثانیه'.format(round(start-time.time())))
     else:
-        await msg.edit('An Error occured while Muxing! sorry something is wrong check again❗❗❗')
+        await msg.edit('هنگام مخلوط کردن خطایی رخ داد! ببخشید مشکلی پیش اومده دوباره چک کنید❗❗❗')
         return False
     time.sleep(2)
     return output
