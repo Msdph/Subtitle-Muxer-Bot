@@ -1,5 +1,4 @@
 #### Subtitle-Muxer-Bot
-[![Readme](https://github-readme-stats.vercel.app/api/pin/?username=NaysaBots&repo=Subtitle-muxer-bot&theme=cobalt)](h&bg_color=24378)
 
 #### Under Maintenance
 
@@ -16,14 +15,12 @@ A Simple Telegram Bot By @Tellybots Team and By @NaysaBots Team to add Subtitle 
 - Can add Subtitle in Any Video
 - Support New Database Mongodb
 
-### Demo 
-<a href="https://t.me/subtitlemuxerbot"><img src="https://telegra.ph/file/3e552b88b4e197f51c0ce.jpg"></a>
 
 ### Deploy
 Deploy Your Own Bot 💕 **Star 🎉 Fork 🍴 & Deploy**
 
 ### Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NaysaBots/Subtitle-Muxer-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/masoudtestdeploy/Subtitle-Muxer-Bot)
 
 ### Self Host
 
@@ -35,7 +32,6 @@ EPL License
 
 
 ### Support 
-<a href="https://t.me/Tellybots_support"><img src="https://img.shields.io/badge/Support_Group-2cb6e0?style=for-the-badge&logo=telegram&logoColor=white"></a> <a href="https://t.me/tellybots_4u"><img src="https://img.shields.io/badge/Updates_Channel-2cb6e0?style=for-the-badge&logo=telegram&logoColor=white"></a>
 
 ### Database
 
