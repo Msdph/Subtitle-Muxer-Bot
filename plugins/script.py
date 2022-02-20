@@ -5,22 +5,22 @@ class Script(object):
 
 
     START_TEXT = """
-Hey {} 
+سلام {} 👋
 
-I am Telegram Most Powerful Subtitle Muxer Bot
+من یه زیرنویس زن هستم
 
-I can Mux Any srt or ass File in File or Video
+من می توانم هر فایل srt یا ass را در فایل یا ویدیو بچسبانم
 
-Use Help Command to Know How to Use me
+از دستور راهنما استفاده کنید تا بدانید چگونه از من استفاده کنید
 
 Made With 💕 By @Tellybots_4u
 """
     HELP_TEXT = """
-Recommended
-➠ Use Hardmux If You Have More Time
+توصیه میشود وقتی : 
+➠ از Hardmux وقتی زمان زیادی داری
 
-Recommended
-➠ Use Softmux To add Subtitle Fastly in It
+توصیه میشود وقتی : 
+➠ از Softmux وقتی میخوای سریع باشه
 
 Softmux
 ➠ Send /softmux to add Subtitle Softly in it
@@ -28,38 +28,33 @@ Softmux
 HardMux
 ➠ Send /hardmux to add Subtitle hardly in it 
 
-Made With 💕 By @Tellybots_4u
+Made With 💕 By @KenzoMovie
 """
     ABOUT_TEXT = """
- **🤖 Bot :** Sub-Muxer\n
- **👲 Developer :** [Tellybots_4u](https://telegram.me/tellybots_4u)\n
- **👥 Channel :** [Tellybots_4u](https://telegram.me/tellybots_4u)\n
- **❄️ Credits :** Everyone in this journey\n
- **🍴 Source :** [Click here](https://t.me/tellybots_digital)\n
- **📝 Language :** [Python3](https://python.org)\n
- **📚 Library :** [Pyrogram v1.2.0](https://pyrogram.org)\n
- **🌟 Server :** [Heroku](https://heroku.com)\n
+ **🤖 Bot :** Subtitle KenzoMovie\n
+ **👥 Channel :** [KenzoMovie](https://telegram.me/KenzoMovie)\n
+
 """
     START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🤖 Update Channel', url='https://telegram.me/tellybots_4u'),
-        InlineKeyboardButton('💬 Support Group', url='https://telegram.me/tellybots_support')
+        InlineKeyboardButton('🤖 Update Channel', url='https://telegram.me/KenzoMovie'),
+        InlineKeyboardButton('💬 Support Group', url='https://telegram.me/KenzoMovie')
         ],[
-        InlineKeyboardButton('❔ Help', callback_data='help'),
-        InlineKeyboardButton('⛔ Close', callback_data='close')
+        InlineKeyboardButton('❔ راهنما', callback_data='help'),
+        InlineKeyboardButton('⛔ بستن', callback_data='close')
         ]]
     )
     HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🏡 Home', callback_data='home'),
-        InlineKeyboardButton('👲 About', callback_data='about'),
-        InlineKeyboardButton('⛔ Close', callback_data='close')
+        InlineKeyboardButton('🏡 خانه', callback_data='home'),
+        InlineKeyboardButton('👲 درباره', callback_data='about'),
+        InlineKeyboardButton('⛔ بستن', callback_data='close')
         ]]
     )
     ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🏡 Home', callback_data='home'),
-        InlineKeyboardButton('❔ Help', callback_data='help'),
-        InlineKeyboardButton('⛔ Close', callback_data='close')
+        InlineKeyboardButton('🏡 خانه', callback_data='home'),
+        InlineKeyboardButton('❔ راهنما', callback_data='help'),
+        InlineKeyboardButton('⛔ بستن', callback_data='close')
         ]]
     )
