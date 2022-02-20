@@ -10,7 +10,7 @@ class Config:
     #comma seperated user id of users who are allowed to use
 
     DOWNLOAD_DIR = 'downloads'
-    OWNER_ID = int(os.environ.get("OWNER_ID", 1316963576))
+    OWNER_ID = int(os.environ.get("OWNER_ID", 664738081))
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)  
     # your telegram id
     OWNER_ID = int(os.environ.get("OWNER_ID", ""))
