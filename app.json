@@ -7,9 +7,9 @@
         "subtitles",
         "muxing"
     ],
-    "repository": "https://github.com/NaysaBots/subtitle-muxer-bot",
-    "website": "https://t.me/naysabots",
-    "success_url": "https://t.me/naysabots",
+    "repository": "https://github.com/masoudtestdeploy/subtitle-muxer-bot",
+    "website": "https://t.me/KenzoMovie",
+    "success_url": "https://t.me/KenzoMovie",
     "env": {
         "BOT_TOKEN": {
             "description": "Create It New Bot From Bot Father and Paste a token here",
