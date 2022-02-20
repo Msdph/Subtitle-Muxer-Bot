@@ -26,7 +26,7 @@ async def save_doc(bot, message, cb=False):
     me = await bot.get_me()
     chat_id = message.from_user.id
     start_time = time.time()
-    downloading = await bot.send_message(chat_id, 'Downloading your File!')
+    downloading = await bot.send_message(chat_id, 'در حال دانلود فایل!')
     download_location = await bot.download_media(
         message = message,
         file_name = Config.DOWNLOAD_DIR+'/',
@@ -70,9 +70,9 @@ async def save_doc(bot, message, cb=False):
         os.rename(Config.DOWNLOAD_DIR+'/'+tg_filename,Config.DOWNLOAD_DIR+'/'+filename)
         db.put_sub(chat_id, filename)
         if db.check_video(chat_id):
-            text = 'Subtitle file downloaded successfully.\nChoose your desired muxing!\n[ /softmux , /hardmux ]'
+            text = '✅ زیرنویس با موفقیت دانلود شد!.\n🔺زیرنویس سافتساب :  /softmux\n🔺زیرنویس هاردساب :  /hardmux \n🔺برداشتن زیرنویس سافتساب : /softremove'
         else:
-            text = 'Subtitle file downloaded.\nNow send Video File!'
+            text = '✅ زیرنویس با موفقیت دانلود شد!\nحالا فیلم رو بفرست!'
 
         await bot.edit_message_text(
             text = text,
@@ -84,9 +84,9 @@ async def save_doc(bot, message, cb=False):
         os.rename(Config.DOWNLOAD_DIR+'/'+tg_filename,Config.DOWNLOAD_DIR+'/'+filename)
         db.put_video(chat_id, filename, save_filename)
         if db.check_sub(chat_id):
-            text = 'Video file downloaded successfully.\nChoose your desired muxing.\n[ /softmux , /hardmux ]'
+            text = '✅ فیلم با موفقیت دانلود شد!.\n🔺زیرنویس سافتساب :  /softmux\n🔺زیرنویس هاردساب :  /hardmux \n🔺برداشتن زیرنویس سافتساب : /softremove'
         else :
-            text = 'Video file downloaded successfully.\nNow send Subtitle file!'
+            text = '✅ فیلم با موفقیت دانلود شد!\nحالا زیرنویس رو بفرست!'
         await bot.edit_message_text(
             text = text,
             chat_id = chat_id,
@@ -112,7 +112,7 @@ async def save_video(bot, message, cb=False):
 
     chat_id = message.from_user.id
     start_time = time.time()
-    downloading = await bot.send_message(chat_id, 'Downloading your File!')
+    downloading = await bot.send_message(chat_id, 'در حال دانلود فایل . . .')
     download_location = await bot.download_media(
         message = message,
         file_name = Config.DOWNLOAD_DIR+'/',
@@ -154,9 +154,9 @@ async def save_video(bot, message, cb=False):
     
     db.put_video(chat_id, filename, save_filename)
     if db.check_sub(chat_id):
-        text = 'Video file downloaded successfully.\nChoose your desired muxing.\n[ /softmux , /hardmux ]'
+        text = '✅ فیلم با موفقیت دانلود شد!.\n🔺زیرنویس سافتساب :  /softmux\n🔺زیرنویس هاردساب :  /hardmux \n🔺برداشتن زیرنویس سافتساب : /softremove'
     else :
-        text = 'Video file downloaded successfully.\nNow send Subtitle file!'
+        text = '✅ فیلم با موفقیت دانلود شد!\nحالا زیرنویس رو بفرست!'
     await bot.edit_message_text(
             text = text,
             chat_id = chat_id,
@@ -246,9 +246,9 @@ async def save_url(bot, message, cb=False):
 
     db.put_video(chat_id, filename, save_filename)
     if db.check_sub(chat_id) :
-        text = 'Video File Downloaded.\nChoose your desired muxing\n[ /softmux , /hardmux ]'
+        text = '✅ فیلم با موفقیت دانلود شد!.\n🔺زیرنویس سافتساب :  /softmux\n🔺زیرنویس هاردساب :  /hardmux \n🔺برداشتن زیرنویس سافتساب : /softremove'
     else :
-        text = 'Video File Downloaded.\nNow send Subtitle file!'
+        text = '✅ فیلم با موفقیت دانلود شد!\nحالا زیرنویس رو بفرست!'
     try:
         await sent_msg.edit(text)
     except:
