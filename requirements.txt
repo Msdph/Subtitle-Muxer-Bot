@@ -3,6 +3,7 @@ tgcrypto
 requests
 aiofiles
 ffmpeg-python
+ffmpeg
 asyncio
 aiohttp
 beautifulsoup4
@@ -15,3 +16,4 @@ motor
 https://github.com/Tinche/aiofiles/archive/master.zip
 dnspython
 psutil
+pymongo
